@@ -1,0 +1,4 @@
+{"input": "zítra", "expect": {"kind": "offset_days", "days": 1}}
+{"input": "v pátek", "expect": {"kind": "weekday", "weekday": "Friday", "offset": "none"}}
+{"input": "do pátku", "expect": {"kind": "weekday", "weekday": "Friday", "offset": "none"}}
+{"input": "příští týden", "expect": {"kind": "next_week_monday"}, "note": "No week-granularity mode in the cookbook; the Jev engine is expected to return no date."}
